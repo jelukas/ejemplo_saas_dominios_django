@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Listado de Páginas</title>
+</head>
+<body>
+	<h1>{{ pagina.titulo }}</h1>
+	<div class="contenido">
+		{{ pagina.contenido|safe }}
+	</div>
+	<footer><small>Estás en una página de {{ request.usuario_subdominio }}</small></footer>
+</body>
+</html>

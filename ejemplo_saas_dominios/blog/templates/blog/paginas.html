@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Listado de Páginas</title>
+</head>
+<body>
+	<h1>Estás viendo las paginas de {{ request.usuario_subdominio }}</h1>
+	<ul>
+	{% for pagina in paginas %}
+		<li><h3>{{ pagina.titulo }}</h3></li>
+	{% endfor %}
+	</ul>
+</body>
+</html>
